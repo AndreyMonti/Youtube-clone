@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <!-- Fontes e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <button id="menu-toggle" class="icon-button">
+        <span class="material-icons-outlined">menu</span>
+      </button>
+      <img src="img/Youtube_logo.png" alt="YouTube Logo" class="logo">
+    </div>
+    <div class="header-center">
+      <div class="search-container">
+        <input type="text" placeholder="Pesquisar" id="search-input">
+        <button id="search-btn" class="icon-button">
+          <span class="material-icons-outlined">search</span>
+        </button>
+      </div>
+    </div>
+    <div class="header-right">
+      <button class="icon-button"><span class="material-icons-outlined">videocam</span></button>
+      <button class="icon-button"><span class="material-icons-outlined">apps</span></button>
+      <button class="icon-button"><span class="material-icons-outlined">notifications</span></button>
+      <img src="img/1747232667383d80eb881af81a1a441262f2197125.jpg" alt="Avatar" class="avatar">
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="sidebar hidden" id="sidebar">
+      <ul>
+        <li class="active"><span class="material-icons-outlined">home</span><span>Início</span></li>
+        <li><span class="material-icons-outlined">video_library</span><span>Shorts</span></li>
+        <li><span class="material-icons-outlined">subscriptions</span><span>Inscrições</span></li>
+        <li><span class="material-icons-outlined">play_circle_filled</span><span>YouTube Music</span></li>
+        <hr>
+        <li><span class="material-icons-outlined">history</span><span>Histórico</span></li>
+        <li><span class="material-icons-outlined">playlist_play</span><span>Playlists</span></li>
+        <li><span class="material-icons-outlined">watch_later</span><span>Assistir mais tarde</span></li>
+        <li><span class="material-icons-outlined">thumb_up</span><span>Vídeos com “Gostei”</span></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <div class="chips">
+        <button class="chip active">Tudo</button>
+        <button class="chip">Música</button>
+        <button class="chip">Mixes</button>
+        <button class="chip">Jogos</button>
+        <button class="chip">Ao vivo</button>
+      </div>
+      <div class="videos-grid">
+        <div class="video-card">
+          <img src="img/maxresdefault.jpg" alt="Vídeo 1" class="thumbnail">
+          <div class="video-info">
+            <img src="img/channels4_profile.jpg" alt="Canal 1" class="channel-avatar">
+            <div class="video-text">
+              <p class="video-title">Aula 1: Introdução HTML e CSS</p>
+              <p class="video-meta">
+                <span class="channel-name">Hashtag Programação</span>
+                <span class="dot">•</span>
+                <span class="views">1,2 mi visualizações</span>
+                <span class="dot">•</span>
+                <span class="time">2 dias atrás</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
